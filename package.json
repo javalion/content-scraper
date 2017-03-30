@@ -1,0 +1,21 @@
+{
+  "name": "content-scraper",
+  "version": "1.0.0",
+  "description": "A Content Scraper related to the Team Treehouse program.",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/javalion/content-scraper.git",
+  "keywords": [
+    "\"Team",
+    "Treehouse\""
+  ],
+  "author": "Terry McKee",
+  "license": "MIT",
+  "dependencies": {
+    "json2csv": "^3.7.3",
+    "osmosis": "^1.1.4"
+  }
+}
