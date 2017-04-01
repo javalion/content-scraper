@@ -34,6 +34,7 @@ osmosis.get(baseurl + '/shirts.php')
   // This processing is called for every product asynchronously
   if (products.length < 8) {
   	 // Add product information to array
+  	 results.Time = "" + new Date() + "";
      products.push(results);
   } 
 
@@ -51,7 +52,7 @@ osmosis.get(baseurl + '/shirts.php')
 
 // Process all of the results
 function saveResultsToFile() {
-	var fields = ['Title','Price','ImageURL','URL'];
+	var fields = ['Title','Price','ImageURL','URL', 'Time'];
 	var result = converter({data: products, fields: fields});
     var now = new Date();
     var filename = now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDay() + ".csv";
